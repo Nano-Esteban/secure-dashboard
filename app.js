@@ -64,3 +64,10 @@ function logout() {
     localStorage.removeItem("user");
     window.location.href = "./index.html";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("loginBtn");
+    if (btn) {
+        btn.addEventListener("click", login);
+    }
+});
