@@ -39,7 +39,7 @@ function login() {
     }
 
     localStorage.setItem("user", JSON.stringify(user));
-    window.location.href = "dashboard.html";
+    window.location.href = "./dashboard.html";
 }
 
 function checkAuth(page) {
@@ -62,5 +62,5 @@ function checkAuth(page) {
 
 function logout() {
     localStorage.removeItem("user");
-    window.location.href = "index.html";
+    window.location.href = "./index.html";
 }
