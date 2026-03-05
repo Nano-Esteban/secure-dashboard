@@ -6,21 +6,26 @@
 <title>Dashboard</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="checkAuth('dashboard')">
 
 <div class="sidebar">
-    <h2>Menu</h2>
-    <a href="dashboard.html">Dashboard</a>
-    <a href="agenda.html">Agenda</a>
-    <a href="#" onclick="logout()">Déconnexion</a>
+<h2>MENU</h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="#">Agenda</a>
+
+<button onclick="logout()">Déconnexion</button>
 </div>
 
 <div class="main">
-    <h1>Dashboard</h1>
-    <div class="card">
-        <h3>Bienvenue</h3>
-        <p id="welcome"></p>
-    </div>
+<h1 id="welcome"></h1>
+
+<div class="card">
+<h3>Informations importantes</h3>
+<p>Bienvenue sur ton dashboard sécurisé.</p>
+</div>
+
 </div>
 
 <script src="app.js"></script>
