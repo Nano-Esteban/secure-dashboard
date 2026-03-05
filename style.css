@@ -1,72 +1,67 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f111a;
-    color: white;
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
 }
 
-.login-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* login */
+
+.login-box{
+width:300px;
+margin:150px auto;
+padding:30px;
+background:rgba(0,0,0,0.7);
+border-radius:10px;
+text-align:center;
 }
 
-.login-container {
-    background: #1a1d2b;
-    padding: 30px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0,255,255,0.2);
+.login-box input{
+width:90%;
+padding:10px;
+margin:10px 0;
+border:none;
+border-radius:5px;
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    background: #111;
-    border: 1px solid #00ffff;
-    color: white;
-    border-radius: 5px;
+.login-box button{
+padding:10px 20px;
+background:#00ff9c;
+border:none;
+border-radius:5px;
+cursor:pointer;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background: #00ffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* dashboard */
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:200px;
+height:100%;
+background:#111;
+padding:20px;
 }
 
-.sidebar {
-    width: 200px;
-    height: 100vh;
-    background: #151823;
-    position: fixed;
-    padding: 20px;
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+margin:10px 0;
 }
 
-.sidebar a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin: 15px 0;
+.sidebar a:hover{
+color:#00ff9c;
 }
 
-.sidebar a:hover {
-    color: #00ffff;
+.main{
+margin-left:220px;
+padding:30px;
 }
 
-.main {
-    margin-left: 220px;
-    padding: 20px;
-}
-
-.card {
-    background: #1a1d2b;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,255,255,0.1);
+.card{
+background:#1e1e1e;
+padding:20px;
+border-radius:10px;
 }
