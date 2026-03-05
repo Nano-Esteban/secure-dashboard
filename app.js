@@ -85,3 +85,61 @@ btn.addEventListener("click",login)
 }
 
 })
+function loadEvents(){
+
+const list = document.getElementById("eventList")
+if(!list) return
+
+list.innerHTML=""
+
+const events = JSON.parse(localStorage.getItem("events") || "[]")
+
+events.forEach((e,i)=>{
+
+const li=document.createElement("li")
+
+li.innerHTML =
+e.date + " - " + e.text +
+" <button onclick='deleteEvent("+i+")'>❌</button>"
+
+list.appendChild(li)
+
+})
+
+}
+
+function addEvent(){
+
+const date=document.getElementById("date").value
+const text=document.getElementById("event").value
+
+if(!date || !text) return
+
+const events=JSON.parse(localStorage.getItem("events") || "[]")
+
+events.push({
+date:date,
+text:text
+})
+
+localStorage.setItem("events",JSON.stringify(events))
+
+document.getElementById("event").value=""
+
+loadEvents()
+
+}
+
+function deleteEvent(i){
+
+const events=JSON.parse(localStorage.getItem("events") || "[]")
+
+events.splice(i,1)
+
+localStorage.setItem("events",JSON.stringify(events))
+
+loadEvents()
+
+}
+
+document.addEventListener("DOMContentLoaded",loadEvents)
