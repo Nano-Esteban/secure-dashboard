@@ -1,67 +1,47 @@
 body{
-margin:0;
+background:#0f172a;
 font-family:Arial;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.login-box{
+background:#1e293b;
+padding:40px;
+border-radius:10px;
+text-align:center;
+width:300px;
+}
+
+h2{
 color:white;
 }
 
-/* login */
-
-.login-box{
-width:300px;
-margin:150px auto;
-padding:30px;
-background:rgba(0,0,0,0.7);
-border-radius:10px;
-text-align:center;
-}
-
-.login-box input{
-width:90%;
+input{
+width:100%;
 padding:10px;
 margin:10px 0;
 border:none;
 border-radius:5px;
 }
 
-.login-box button{
-padding:10px 20px;
-background:#00ff9c;
+button{
+width:100%;
+padding:10px;
+background:#3b82f6;
 border:none;
+color:white;
 border-radius:5px;
 cursor:pointer;
 }
 
-/* dashboard */
-
-.sidebar{
-position:fixed;
-left:0;
-top:0;
-width:200px;
-height:100%;
-background:#111;
-padding:20px;
+button:hover{
+background:#2563eb;
 }
 
-.sidebar a{
-display:block;
-color:white;
-text-decoration:none;
-margin:10px 0;
-}
-
-.sidebar a:hover{
-color:#00ff9c;
-}
-
-.main{
-margin-left:220px;
-padding:30px;
-}
-
-.card{
-background:#1e1e1e;
-padding:20px;
-border-radius:10px;
+#error{
+color:red;
 }
