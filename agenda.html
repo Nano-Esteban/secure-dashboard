@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Agenda</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="checkAuth('agenda')">
 
 <div class="sidebar">
-    <h2>Menu</h2>
-    <a href="dashboard.html">Dashboard</a>
-    <a href="agenda.html">Agenda</a>
-    <a href="#" onclick="logout()">Déconnexion</a>
+
+<h2>MENU</h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="agenda.html">Agenda</a>
+
+<button onclick="logout()">Déconnexion</button>
+
 </div>
 
 <div class="main">
-    <h1>Agenda</h1>
-    <div class="card">
-        <p>Zone agenda sécurisée.</p>
-    </div>
+
+<h1>Agenda</h1>
+
+<div class="card">
+
+<input type="date" id="date">
+<input type="text" id="event" placeholder="Nouvel événement">
+
+<button onclick="addEvent()">Ajouter</button>
+
+<ul id="eventList"></ul>
+
 </div>
 
-<script src="/app.js"></script>
+</div>
+
+<script src="app.js"></script>
+
 </body>
 </html>
